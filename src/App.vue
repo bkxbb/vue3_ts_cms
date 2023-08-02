@@ -1,0 +1,19 @@
+<script setup lang="ts">
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+</script>
+
+<template>
+  <div class="app">
+    <!-- Element Plus 组件配置中文 -->
+    <el-config-provider :locale="zhCn">
+      <router-view></router-view>
+    </el-config-provider>
+  </div>
+</template>
+
+<style scoped>
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
