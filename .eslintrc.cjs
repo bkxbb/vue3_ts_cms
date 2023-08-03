@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     'vue/multi-word-component-names': 'off',
-    'vue/valid-template-root': 'off'
+    'vue/valid-template-root': 'off',
+    'no-undef': 'off'
   }
 }
