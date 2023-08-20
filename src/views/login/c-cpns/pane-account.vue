@@ -13,6 +13,9 @@ const CACHE_PASSWORD = 'password'
 
 // 1.定义account数据
 const account = reactive<IAccount>({
+  // （??）是一种称为"空值合并运算符",它的作用是判断一个表达式的结果是否为 null 或 undefined，
+  // 如果是，则返回该表达式的默认值，否则返回表达式的结果。
+  // 这里如果没有找到该值或者值为 null 或 undefined，那么 ?? 运算符将返回一个空字符串 (‘’)。
   name: localCache.getCache(CACHE_NAME) ?? '',
   password: localCache.getCache(CACHE_PASSWORD) ?? ''
 })
